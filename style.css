@@ -1,0 +1,146 @@
+.body{
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  display: flex;
+  background-image: url("https://i.ytimg.com/vi/qXguOSZEoP8/maxresdefault.jpg");
+}
+.subHeader{
+  color: white;
+  border: solid 2px #09c;
+  border-radius: 20px;
+  text-shadow: 5px 5px 8px #09c;
+  padding: 5px;
+  margin: 0px;
+}
+.mainHeader{
+  width: inherit;
+  background-color: #09c;
+  color: white;
+  text-align: center;
+  display: flex;
+  text-shadow: 5px 5px 8px black;
+}
+.contactInfo{
+  width: 25%;
+  padding: 20px;
+  height: inherit;
+}
+.profilePic{
+  width: 85%;
+  max-width: 200px;
+  box-shadow: 5px 5px 8px gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.resume{
+  width: 75%;
+  border-radius: 10px;
+}
+.leftPanel{
+  color: white;
+  padding: 10px;
+  border: solid 1px white;
+  border-radius: 10px;
+  box-shadow: inset -5px -5px 15px  white;
+}
+.contactMe{
+  border-top: solid 1px white;
+  text-align: center;
+  padding: 20px;
+}
+.icon{
+  width:15px;
+  height: 15 px;
+  background-image: url("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjIkomng5PVAhVLilQKHVfnDY0QjRwIBw&url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F41640649%2Ffixed-left-menu-scrolling-not-working&psig=AFQjCNFh4-NZtQUbZQ7W3FQjd0OujUNhDQ&ust=1500473947148663");
+}
+.info{
+  width:75%;
+  color: white;
+}
+.email{
+  width: 100%;
+  display: flex;
+}
+.address{
+  width: 100%;
+  display: flex;
+}
+.phoneNumber{
+  width: 100%;
+  display: flex;
+}
+.options{
+  border-top: solid 1px white;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+.name{
+  text-align: center;
+  border-top: solid 1px white;
+  padding: 20px;
+}
+#myName{
+  font-size: 25px;
+  font-weight: bold;
+}
+#position{
+  font-weight: bold;
+  font-size: 15px;
+}
+.contactInfo{
+  float: right;
+  width: 25%;
+}
+#youngerYearsButton{
+  cursor: pointer;
+}
+#youngerYearsText{
+    display:none;
+}
+.p{
+  margin: 10px;
+  color: white;
+}
+#eduHeader{
+  margin-bottom: 5px;
+}
+.empHeader{
+  color: white;
+  display: flex;
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  border-bottom: solid 1px white;
+  margin: 10px;
+}
+.empName{
+  width: 33%;
+  text-align: center;
+}
+.empTitle{
+  width: 33%;
+  text-align: center;
+}
+.empDate{
+  width: 33%;
+  text-align: center;
+}
+.row{
+  display: flex;
+}
+.skillsButton{
+  color: white;
+  width: 30%;
+  border: solid 2px #9ff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px grey;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+}
