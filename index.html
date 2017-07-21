@@ -1,0 +1,158 @@
+<html lang="en">
+
+  <head>
+    <title> James Solum's Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body class="body">
+    <div class="contactInfo">
+      <div class = "leftPanel">
+        <img class = "profilePic" src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/14291667_1383405645022827_4047726987200940063_n.jpg?oh=2b1bb910ae1f3308355f60ab4995a2d7&oe=5A030FAC">
+        <div class = "name">
+          <div id="myName">James Solum</div>
+          <div id= "profession">Web Designer/ Developer</div>
+        </div>
+        <div class = "contactMe">
+          <div class="address">
+            <div class="icon"></div>
+            <div class="info">2677 Garganey Dr<br>Castle Rock, CO 80104</div>
+          </div>
+          <div class = "email">
+            <div class="icon"></div>
+            <div class="info">Japsolum@hotmail.com</div>
+          </div>
+          <div class="phoneNumber">
+            <div class="icon"></div>
+            <div class="info">720.369.4276</div>
+          </div>
+        </div>
+        <div class = "options">
+          Print Hard Copy<br>
+          <br>Save as PDF<br>
+        </div>
+      </div>
+    </div>
+
+    <div class ="resume">
+      <div class="background">
+        <div class="subHeader" id="youngerYearsButton" style.display="none"><h2> Younger Years </h2></div>
+        <div class = "child" id="youngerYearsText"> My name is James, I have always loved the tech world and the idea of computer programming.
+          Before I had even started in highschool I had self-taught myself HTML 4.0 and had 3-4 full websites
+          running on my own. In highschool I continued that path by taking every class my school had from powerpoint and
+          excel to more in depth classes like web design, visual basic, and c++.
+        </div>
+      </div>
+
+      <div class= "subHeader"><h2> Education </h2></div>
+        <div class="empHeader" id = "eduHeader">
+          <div class="empName">
+            Udacity
+          </div>
+          <div class= "empTitle">
+            Nanodegree in Intro to Programming
+          </div>
+          <div class="empDate">
+            2017
+          </div>
+        </div>
+
+        <div class="empHeader" id ="eduHeader">
+          <div class="empName">
+            Hartenbach High School
+          </div>
+          <div class= "empTitle">
+            Graduate
+          </div>
+          <div class="empDate">
+            2005
+          </div>
+        </div>
+      </div>
+
+      <div class="employment">
+        <h2 class="subHeader"> Employment </h2>
+        <div class="employer">
+          <div class="empHeader">
+            <div class="empName">
+              AT&T
+            </div>
+            <div class= "empTitle">
+              Tech Support
+            </div>
+            <div class="empDate">
+              2015
+            </div>
+          </div>
+        <p class = "p">Started working at AT&T in 2015, within a couple months I had already received a promotion
+          to the specialized department I wanted, and received two raises. Since then I have continued
+          to receive raises and regular bonuses for work exceeding expectations.</p>
+        </div>
+
+        <div class="employer">
+          <div class="empHeader">
+            <div class="empName">
+              Irish Snug
+            </div>
+            <div class= "empTitle">
+              Executive Chef / Kitchen Manager
+            </div>
+            <div class="empDate">
+              2014
+            </div>
+          </div>
+        <p class = "p">Started as a sous chef in 2013, within a few months I was promoted to executive chef.
+        On top of regular duties like managing food cost, writing schedules, and creating menus, I
+        also organized multiple off site events like brew at the zoo and other charity events.</p>
+        </div>
+      </div>
+
+      <div class="employer">
+        <div class="empHeader">
+          <div class="empName">
+            McCarthy's Sports Bar
+          </div>
+          <div class= "empTitle">
+            Executive Chef / Kitchen Manager
+          </div>
+          <div class="empDate">
+            2007
+          </div>
+        </div>
+      <p class = "p">Started as a dishwasher and was promoted to line cook within 4 months. From There I received
+      regular raises and was eventually given title of lead line cook. When Kitchen manager job opened
+      up I received a call where they offered me a job on the spot where I brought food and labor costs
+      down while increasing revenue pretty much immediately.</p>
+      </div>
+
+      <div class= "skills">
+        <h2 class="subHeader"> Skills </h2>
+          <div class="row">
+            <div class="skillsButton"><b>HTML</b></div>
+            <div class="skillsButton"><b>CSS</b></div>
+            <div class="skillsButton"><b>JavaScript / jQuery</b></div>
+          </div>
+          <div class="row">
+            <div class="skillsButton"><b>Python</b></div>
+            <div class="skillsButton"><b>SQL</b></div>
+            <div class="skillsButton"><b>C++</b></div>
+          </div>
+      </div>
+    </div>
+    <script>
+      $( ".subHeader" ).click(function() {
+        parent = getElementById(this);
+        if ($(  ).is( ":hidden" )){
+          $( "#youngerYearsText" ).slideDown( "slow" );
+        } else {
+          $( "#youngerYearsText" ).slideUp();
+        }
+      });
+
+
+    </script>
+
+  </body>
+
+</html>
