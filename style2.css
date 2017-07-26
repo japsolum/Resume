@@ -1,0 +1,110 @@
+.body{
+  width: 100%;
+  max-width: 1000px;
+  background-image: url("http://cdn.pcwallart.com/images/blue-aurora-borealis-wallpaper-3.jpg");
+}
+.menu{
+  padding: 20px;
+    float: left;
+}
+.menuButton{
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px black;
+  background-color: rgba(0, 0, 0, .4);
+}
+.menuButton:hover{
+  cursor:pointer;
+  background-color: rgba(0, 0, 0, .4);
+  box-shadow: 5px 5px 8px white;
+}
+.dropDownMenu{
+  padding: 10px;
+  width: 150px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, .4);
+  box-shadow: 5px 5px 8px black;
+  color: white;
+  display: none;
+}
+.dropdownButton{
+  margin-top: 10px;
+  font-size: 20px;
+  text-shadow: 5px 5px 8px black;
+}
+.dropdownButton:hover{
+  text-shadow: 5px 5px 8px white;
+  cursor: pointer;
+}
+.contentWindow{
+  font-size: 25px;
+  font: georgia;
+  color: white;
+  position: absolute;
+  display: table;
+  text-align: center;
+  height: 450px;
+  width: 75%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .6);
+  float: right;
+  transform: skewY(172deg) translate(200px, 150px);
+  box-shadow: 20px 20px 40px black;
+}
+.home{
+  font-family: georgia;
+  text-shadow: 8px 8px 12px black;
+  color: white;
+  font-size: 75px;
+  display: table-cell;
+  vertical-align: middle;
+  margin:20px auto;
+}
+h3{
+  color: white;
+  font-size: 20px
+  margin: 10px;
+  padding: 0px;
+}
+.webDev{
+  font-size: 50px;
+  font-style: italic;
+}
+.aboutMe{
+  text-shadow: 5px 5px 8px black;
+  display: table-cell;
+  vertical-align: middle;
+}
+.row{
+  display: flex;
+  height: 150px;
+  margin: 20px;
+}
+.skillsButton{
+  font-weight: bold;
+  color: white;
+  text-shadow:5px 5px 8px black;
+  box-shadow: 5px 5px 8px white;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  width:30%;
+  height:100%;
+}
+.htmlImg{
+  background-image: url('htmlCode.jpg');
+}
+.cssImg{
+  background-image: url("cssCode.jpg");
+}
+.jsImg{
+  background-image: url('javascriptCode.jpg');
+}
+.pythonImg{
+  background-image: url('pythonCode.png');
+}
+.sqlImg{
+  background-image: url('sqlCode.jpg');
+}
+.jqueryImg{
+  background-image: url('jQueryCode.png');
+}
