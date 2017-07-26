@@ -1,0 +1,59 @@
+<html lang="en">
+
+  <head>
+    <title> James Solum's Resume</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body class="body">
+    <div class="menu">
+      <img class= "menuButton" height = "50" width="50" src="http://www.for-cu.com/img/nav-icon.png">
+      <div class="dropDownMenu">
+        <div class="dropdownButton" id ="aboutMe" onclick="menuClick(this.id);">About Me<br></div>
+        <div class="dropdownButton" id = "skills" onclick="menuClick(this.id);">Skills<br></div>
+        <div class="dropdownButton" id = "projectsButton" onclick="menuClick(this.id);">Projects<br></div>
+        <div class="dropdownButton" id = "contactButton" onclick="menuClick(this.id);">Contact ME<br></div>
+        <div class="dropdownButton" id = "printButton" onclick="menuClick(this.id);">Print<br></div>
+        <div class="dropdownButton" id = "downloadButton" onclick="menuClick(this.id);">Download PDF<br></div>
+      </div>
+    </div>
+    <div class= "contentWindow" id="contentWindow">
+      <div class="home"><h3>James Solum</h3>
+      <span><i>UI/UX <br>Web Designer</i></span></div>
+    </div>
+  </body>
+  <script>
+  var contentWindow= document.getElementById("contentWindow");
+  var aboutMe = ('<div class="aboutMe"><h2>About Myself</h2><span class="text">My name is James, I have always loved the tech world and the idea of computer programming. Before I had even started in highschool I had self-taught myself HTML 4.0 and had 3-4 full websites running on my own. In highschool I continued that path by taking every class my school had from powerpoint and excel to more in depth classes like web design, visual basic, and c++.</span></div>');
+  var skills = ('<div class= "skills"><h3> Skills </h3><div class="table"><div class="row"><div class="skillsButton htmlImg">HTML</div><div class="skillsButton cssImg">CSS</div><div class="skillsButton jsImg">JavaScript</div></div><div class="row"><div class="skillsButton pythonImg">Python</div><div class="skillsButton sqlImg">SQL</div><div class="skillsButton jqueryImg">jQuery</div></div></div></div>');
+
+  $( ".menuButton" ).click(function() {
+    if ($(".dropDownMenu").is( ":hidden" )){
+      $( ".dropDownMenu" ).slideDown( "slow" );
+    } else {
+      $( ".dropDownMenu" ).slideUp();
+    }
+  });
+
+  function menuClick(buttonId){
+    $(".dropDownMenu").slideUp();
+    $(".contentWindow").fadeOut("slow");
+    setTimeout(function () {
+      if (buttonId == "aboutMe"){
+        while (contentWindow.lastChild) {
+          contentWindow.removeChild(contentWindow.lastChild);
+        }
+        $(".contentWindow").append(aboutMe);
+      }else if (buttonId == "skills") {
+        while (contentWindow.lastChild) {
+          contentWindow.removeChild(contentWindow.lastChild);
+        }
+        $(".contentWindow").append(skills);
+      }
+      $(".contentWindow").fadeIn("slow");
+    }, 1000);
+  }
+  </script>
+
+</html>
